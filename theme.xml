@@ -71,6 +71,7 @@ originally based on: "simple" by nils bonenberger
 		</image>
 
 		<helpsystem name="help">
+			<fontPath>${themeFont}</fontPath>
 			<iconColor>7d7d7d</iconColor>
 			<textColor>7d7d7d</textColor>
 		</helpsystem>
@@ -372,7 +373,7 @@ Use the following for a background pic instead of just colored box.  use in grid
 			<centerSelection>false</centerSelection>
 			<padding>0 0</padding>
 			<margin>0 0</margin>
-			<scrollDirection>vertical</scrollDirection>
+			<scrollDirection>horizontal</scrollDirection>
 			<scrollLoop>true</scrollLoop>
 			<animate>true</animate>
 			<autoLayout>3 3</autoLayout>
@@ -403,5 +404,10 @@ Use the following for a background pic instead of just colored box.  use in grid
 			<color>969696</color>
 			<visible>true</visible>
 		</text>
+                <helpsystem name="help">
+                        <fontPath>${themeFont}</fontPath>
+                        <iconColor>7d7d7d</iconColor>
+                        <textColor>7d7d7d</textColor>
+                </helpsystem>
 	</view>
 </theme>
