@@ -22,7 +22,7 @@ originally based on: "simple" by nils bonenberger
 		<colorPink>f50297</colorPink>
 		<themeColor>${colorRed}</themeColor>
 		<themeArtFolder>./art</themeArtFolder>
-		<themeFont>${themeArtFolder}/Cabin-Bold.ttf</themeFont>
+		<themeFont>${themeArtFolder}/Flynn-4v54.ttf</themeFont>
 		<themeScrollSound>${themeArtFolder}/scroll.wav</themeScrollSound>
 		<themeGamelistFontSize>32</themeGamelistFontSize>
 	</variables>
