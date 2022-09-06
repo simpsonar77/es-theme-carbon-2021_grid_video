@@ -138,7 +138,7 @@ originally based on: "simple" by nils bonenberger
 		</image>
 
 		<video name="md_video">
-			<visible>false</visible>
+			<visible>true</visible>
 		</video>
 	</view>
 
@@ -337,7 +337,11 @@ originally based on: "simple" by nils bonenberger
 		</video>
 	</view>
 
-	<!-- grid -->
+	<!-- grid 
+Use the following for a background pic instead of just colored box.  use in gridtile section.
+<backgroundImage>./art/${style}/tile-selected.png</backgroundImage>
+
+		-->
 	<view name="grid">
 		<image name="shadow" extra="true">
 			<path>${themeArtFolder}/shadow.png</path>
@@ -346,18 +350,38 @@ originally based on: "simple" by nils bonenberger
 			<origin>0 0</origin>
 			<color>${themeColor}</color>
 		</image>
+		<video name="md_video">
+			<maxSize>640 480</maxSize>
+			<pos>1600 575</pos>
+			<origin>0.5 0.5</origin>
+			<delay>0</delay>
+			<showSnapshotNoVideo>true</showSnapshotNoVideo>
+			<showSnapshotDelay>false</showSnapshotDelay>
+			<visible>true</visible>
+		</video>
+                <image name="md_marquee">
+                        <maxSize>676 134</maxSize>
+                        <pos>1240 87</pos>
+                        <origin>0.5 0.5</origin>
+                        <visible>true</visible>
+                </image>
 
 		<imagegrid name="gamegrid">
-			<size>1920 786</size>
-			<pos>0 175</pos>
+			<size>1200 768 </size>
+			<pos>0.1 175</pos>
+			<centerSelection>false</centerSelection>
+			<padding>0 0</padding>
 			<margin>0 0</margin>
 			<scrollDirection>vertical</scrollDirection>
+			<scrollLoop>true</scrollLoop>
 			<animate>true</animate>
+			<autoLayout>3 3</autoLayout>
+			<autoLayoutSelectedZoom>1.4</autoLayoutSelectedZoom>
 		</imagegrid>
 
 		<gridtile name="default">
 			<size>320 262</size>
-			<padding>50 50</padding>
+			<padding>0 0</padding>
 			<imageColor>7f7f7fff</imageColor>
 			<backgroundColor>ffffff00</backgroundColor>
 		</gridtile>
